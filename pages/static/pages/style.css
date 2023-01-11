@@ -1,0 +1,8 @@
+form {
+    display: flex;
+}
+
+#book_list_box {
+    min-width: 50px;
+    /* width: 50px; */
+}
