@@ -27,7 +27,9 @@ def add_new_book(request, name, author, description):
     new_book.author = author
     new_book.description = description
     new_book.save()
-    return HttpResponse(f"Added a new book successfully.:\n- {name}\n- {author}\n- {description}")
+    new_key = new_book.pk
+    # return HttpResponse(f"Added a new book successfully.:\n- {name}\n- {author}\n- {description}")
+    return HttpResponse(new_key)
 
 def save_edits_to_one_book(request, primary_key, name, author, description):
     correct_index = primary_key
@@ -43,8 +45,7 @@ def save_edits_to_one_book(request, primary_key, name, author, description):
                         f"\n- {edited_book.description}")
 
 def delete_one_book(request, primary_key):
-    correct_index = primary_key
-    deletable_book = Book.objects.get(pk=correct_index)
+    deletable_book = Book.objects.get(pk=primary_key)
     name = deletable_book.name
     deletable_book.delete()
     return HttpResponse(f"Deleted '{name}' successfully.")

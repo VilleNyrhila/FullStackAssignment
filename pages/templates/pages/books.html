@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'scripts/book-collection/build/static/css/main.7ef7c8c6.css' %}"></link>
+    <link rel="stylesheet" href="{% static 'scripts/book-collection/src/index.css' %}">
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="{% static 'scripts/book-collection/build/static/js/main.d5bec2fd.js' %}"></script>
+    {% csrf_token %}
+    <script type="module" src="{% static 'scripts/book-collection/build/static/js/main.4161a196.js' %}"></script>
 </body>
 </html>
