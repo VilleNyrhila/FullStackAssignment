@@ -1,7 +1,7 @@
 # Full-Stack Assignment
 This is an assignment originally made as a submission to the full-stack exercise given by a company. 
 It contains a front-end implemented with React (required by the assignment) and a back-end implemented in Django.
-The back-end also implements a database using MySQL.
+The back-end also implements a database using SQLite. The Django back-end automatically sanitizes for SQL injection.
 
 ## Description of the task directly quoted
 Implement a simple single-page web application which manages a collection of books. Your
@@ -44,10 +44,6 @@ run this command to make sure you have everything:
 ## To-do list
 There are a number of things which currently remain unimplemented, but which I wish to add in with due time:
 - Automated tests for back-end and front-end.
-- Use of CSRF tokens in the form.
-- Use of POST and/or PUT methods. This is related to the CSRF tokens. 
-Currently, the back-end does not distinguish between HTTP methods, 
-and in the front-end all calls to the back-end are implemented as GET methods.
-- Counter-measures against code injection. Currently, the app takes input as it is given.
+- Counter-measures against XSS. Currently, the app takes input as it is given.
 In a deployed product, this would be a critical vulnerability. 
 Measures need to be implemented to at least sanitize input.
