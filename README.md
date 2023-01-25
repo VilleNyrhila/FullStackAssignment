@@ -1,7 +1,8 @@
 # Full-Stack Assignment
 This is an assignment originally made as a submission to the full-stack exercise given by a company. 
 It contains a front-end implemented with React (required by the assignment) and a back-end implemented in Django.
-The back-end also implements a database using SQLite. The Django back-end automatically sanitizes for SQL injection.
+The back-end also implements a database using SQLite. The Django back-end automatically sanitizes for SQL injection. 
+Input sanitization is implemented to prevent XSS.
 
 ## Description of the task directly quoted
 Implement a simple single-page web application which manages a collection of books. Your
@@ -44,6 +45,3 @@ run this command to make sure you have everything:
 ## To-do list
 There are a number of things which currently remain unimplemented, but which I wish to add in with due time:
 - Automated tests for back-end and front-end.
-- Counter-measures against XSS. Currently, the app takes input as it is given.
-In a deployed product, this would be a critical vulnerability. 
-Measures need to be implemented to at least sanitize input.
