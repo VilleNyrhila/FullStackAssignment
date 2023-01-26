@@ -35,9 +35,15 @@ but as the required JavaScript modules are already included in the repo,
 this should not be needed.   
 
 
+First of all, the virtual environment needs to be turned on. 
+All the libraries are linked in the virtual environment.
+On a Windows OS, to activate it, run the script: "Activate.bat" with the command:  
+`.\venv\Scripts\activate`  
 In the root directory of this repo, run the following command in the command-line:  
 `python manage.py runserver`   
 The front-end will then be available at: [127.0.0.1:8000](http://127.0.0.1:8000).  
+When done running the program, you can deactivate the Python virtual environment by putting in the command:  
+`deactivate`  
 All requirements ought to be packaged in with this repo, but if you have problems,
 run this command to make sure you have everything:  
 `pip install -r requirements.txt`
