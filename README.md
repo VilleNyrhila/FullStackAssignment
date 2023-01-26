@@ -29,8 +29,8 @@ implement the backend.
 
 ## How to run
 ### Single command boot
-On Windows using PowerShell, from the root directory of this project:
-` .\venv\Scripts\activate ; python manage.py runserver`  
+On Windows using PowerShell, from the root directory of this project:  
+`.\venv\Scripts\activate ; python manage.py runserver`  
 ### Boot in more detail 
 These instructions presume you have `Python` and `pip` installed.
 An installation of `npm` might also be necessary, 
