@@ -28,9 +28,12 @@ Use React for frontend. You can freely choose the technologies by which you are 
 implement the backend.
 
 ## How to run
-The code presented here is completely functional. 
-These instructions presume you have Python and pip installed.
-An installation of npm might also be necessary, 
+### Single command boot
+On Windows using PowerShell, from the root directory of this project:
+` .\venv\Scripts\activate ; python manage.py runserver`  
+### Boot in more detail 
+These instructions presume you have `Python` and `pip` installed.
+An installation of `npm` might also be necessary, 
 but as the required JavaScript modules are already included in the repo, 
 this should not be needed.   
 
